@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curso de Programação</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--blue:#0B3D91;
+--yellow:#F5C116;
+--light:#f5f7fa;
+--dark:#1d2433;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fff;
+color:#333;
+line-height:1.7;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:90px;
+}
+
+.logo h2{
+color:var(--blue);
+}
+
+.menu{
+display:flex;
+gap:25px;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.menu a:hover{
+color:var(--blue);
+}
+
+.hero{
+background:linear-gradient(rgba(11,61,145,.92),rgba(11,61,145,.92));
+color:white;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:150px 20px 80px;
+}
+
+.hero img{
+width:450px;
+max-width:90%;
+background:white;
+padding:15px;
+border-radius:20px;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:1.2rem;
+}
+
+section{
+padding:100px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+color:var(--blue);
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:var(--blue);
+margin-bottom:10px;
+}
+
+.gray{
+background:var(--light);
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.skill{
+background:white;
+padding:20px;
+border-left:5px solid var(--yellow);
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.stats{
+background:var(--blue);
+color:white;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+text-align:center;
+gap:20px;
+}
+
+.stats-grid h2{
+font-size:3rem;
+color:var(--yellow);
+}
+
+footer{
+background:#071f4d;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.menu{
+display:none;
+}
+
+.logo img{
+height:70px;
+}
+
+.hero img{
+width:280px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">
+<img src="logo curso com nome.png" alt="Logo">
+<h2>Curso de Programação</h2>
+</div>
+
+<div class="menu">
+<a href="#sobre">Sobre</a>
+<a href="#perfil">Perfil</a>
+<a href="#conteudos">Conteúdos</a>
+<a href="#competencias">Competências</a>
+<a href="#contactos">Contactos</a>
+</div>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<div>
+
+<img src="logo curso com nome.png" alt="Logo">
+
+<h1>Curso de Programação</h1>
+
+<p>
+Aprende a desenvolver websites, aplicações e soluções digitais.
+Descobre as principais tecnologias utilizadas no mundo da informática
+e cria projetos reais através da programação.
+</p>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<div class="container">
+
+<h2 class="title">Sobre o Curso</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;">
+O Curso de Programação foi desenvolvido para alunos interessados em tecnologia,
+inovação e desenvolvimento digital. Ao longo da formação são exploradas
+ferramentas modernas utilizadas na criação de websites, aplicações e bases de dados.
+Os alunos trabalham em projetos práticos que estimulam a criatividade,
+o pensamento lógico e a resolução de problemas.
+</p>
+
+</div>
+
+</section>
+
+<section id="perfil" class="gray">
+
+<div class="container">
+
+<h2 class="title">Este Curso é Para Ti Se...</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>💻 Gostas de Tecnologia</h3>
+<p>Tens curiosidade sobre computadores e software.</p>
+</div>
+
+<div class="card">
+<h3>🧠 Gostas de Resolver Problemas</h3>
+<p>Gostas de desafios e de encontrar soluções.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Queres Criar Projetos</h3>
+<p>Desejas desenvolver websites e aplicações.</p>
+</div>
+
+<div class="card">
+<h3>📚 Queres Aprender</h3>
+<p>Estás motivado para adquirir novas competências.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="conteudos">
+
+<div class="container">
+
+<h2 class="title">Conteúdos do Curso</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>HTML5</h3>
+<p>Estrutura e organização de páginas web.</p>
+</div>
+
+<div class="card">
+<h3>CSS3</h3>
+<p>Design moderno e adaptação a dispositivos móveis.</p>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Interatividade e funcionalidades avançadas.</p>
+</div>
+
+<div class="card">
+<h3>Python</h3>
+<p>Programação, lógica e automação.</p>
+</div>
+
+<div class="card">
+<h3>Bases de Dados</h3>
+<p>Organização e gestão de informação.</p>
+</div>
+
+<div class="card">
+<h3>Git & GitHub</h3>
+<p>Controlo de versões e trabalho colaborativo.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="gray">
+
+<div class="container">
+
+<h2 class="title">Plano Curricular</h2>
+
+<table style="
+width:100%;
+border-collapse:collapse;
+background:white;
+border:1px solid #d9d9d9;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+">
+
+<tr style="background:#0B3D91;">
+<th style="
+padding:15px;
+text-align:center;
+color:white;
+border:1px solid #d9d9d9;">
+Disciplina
+</th>
+
+<th style="
+padding:15px;
+text-align:center;
+color:white;
+border:1px solid #d9d9d9;">
+Horas
+</th>
+</tr>
+
+<tr>
+<td style="padding:12px;border:1px solid #d9d9d9;">Português</td>
+<td style="padding:12px;border:1px solid #d9d9d9;text-align:center;">320</td>
+</tr>
+
+<tr>
+<td style="padding:12px;border:1px solid #d9d9d9;">Inglês</td>
+<td style="padding:12px;border:1px solid #d9d9d9;text-align:center;">220</td>
+</tr>
+
+<tr>
+<td style="padding:12px;border:1px solid #d9d9d9;">Matemática</td>
+<td style="padding:12px;border:1px solid #d9d9d9;text-align:center;">300</td>
+</tr>
+
+<tr>
+<td style="padding:12px;border:1px solid #d9d9d9;">Programação</td>
+<td style="padding:12px;border:1px solid #d9d9d9;text-align:center;">600</td>
+</tr>
+
+<tr>
+<td style="padding:12px;border:1px solid #d9d9d9;">Redes Informáticas</td>
+<td style="padding:12px;border:1px solid #d9d9d9;text-align:center;">175</td>
+</tr>
+
+<tr>
+<td style="padding:12px;border:1px solid #d9d9d9;">Estágio FCT</td>
+<td style="padding:12px;border:1px solid #d9d9d9;text-align:center;">600</td>
+</tr>
+
+<tr style="background:#f5f5f5;">
+<td style="padding:12px;border:1px solid #d9d9d9;"><strong>Total</strong></td>
+<td style="padding:12px;border:1px solid #d9d9d9;text-align:center;"><strong>2215</strong></td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+```
+
+
+<section id="competencias" class="gray">
+
+<div class="container">
+
+<h2 class="title">Competências Adquiridas</h2>
+
+<div class="skills">
+
+<div class="skill">
+Criar websites responsivos e modernos.
+</div>
+
+<div class="skill">
+Desenvolver aplicações básicas em Python.
+</div>
+
+<div class="skill">
+Aplicar conceitos de programação orientada à resolução de problemas.
+</div>
+
+<div class="skill">
+Utilizar GitHub para gestão de projetos.
+</div>
+
+<div class="skill">
+Trabalhar com bases de dados.
+</div>
+
+<div class="skill">
+Desenvolver projetos digitais completos.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="title">Projetos Desenvolvidos</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Website Escolar</h3>
+<p>Criação de um website informativo.</p>
+</div>
+
+<div class="card">
+<h3>Calculadora Web</h3>
+<p>Projeto utilizando HTML, CSS e JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Jogo Interativo</h3>
+<p>Desenvolvimento de um jogo simples.</p>
+</div>
+
+<div class="card">
+<h3>Aplicação Python</h3>
+<p>Programa funcional para resolver tarefas reais.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div>
+<h2>100+</h2>
+<p>Horas de Formação</p>
+</div>
+
+<div>
+<h2>6</h2>
+<p>Módulos</p>
+</div>
+
+<div>
+<h2>10+</h2>
+<p>Projetos</p>
+</div>
+
+<div>
+<h2>1</h2>
+<p>Projeto Final</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contactos">
+
+<div class="container">
+
+<h2 class="title">Agrupamento de Escolas Pinheiro e Rosa</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+Faro, Portugal<br>
+Curso de Programação<br>
+Projeto Educativo de Tecnologias Digitais
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2025 Curso de Programação | Agrupamento de Escolas Pinheiro e Rosa
+</footer>
+
+</body>
+</html>
